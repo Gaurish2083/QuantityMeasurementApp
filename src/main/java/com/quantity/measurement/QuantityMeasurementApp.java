@@ -7,7 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class QuantityMeasurementApp {
 	static class Feet{
 		private final double value;
-
 		public Feet(double value) {
 			this.value = value;
 		}
@@ -24,23 +23,20 @@ public class QuantityMeasurementApp {
 			return Double.compare(this.value , Nfeet.value) == 0;
 		}
 	}
-
-	static class Inch{
+	static class Inches{
 		private final double value;
-		public Inch(double value){
+		public Inches(double value){
 			this.value = value;
 		}
+
 		@Override
 		public boolean equals(Object obj) {
 			if(this == obj) return true;
 
-			if(obj == null || getClass()!= obj.getClass()){
-				return false;
-			}
+			if(obj == null || getClass() != obj.getClass()) return false;
 
-			Inch NInch = (Inch) obj;
-			return Double.compare(this.value , NInch.value) == 0;
-
+			Inches inch =  (Inches) obj;
+			return Double.compare(this.value , inch.value) == 0;
 		}
 	}
 
@@ -50,11 +46,10 @@ public class QuantityMeasurementApp {
 		Feet f1 = new Feet(34.5);
 		Feet f2 = new Feet(34.5);
 
+		Inches i1 = new Inches(34.5);
+		Inches i2 = new Inches(34.5);
+
 		System.out.println(f1.equals(f2));
-
-		Inch i1 = new Inch(52.2);
-		Inch i2 = new Inch(52.2);
-
 		System.out.println(i1.equals(i2));
 	}
 }
