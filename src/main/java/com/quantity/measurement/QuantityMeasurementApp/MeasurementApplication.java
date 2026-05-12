@@ -1,4 +1,4 @@
-package QuantityMeasurementApp;
+package com.quantity.measurement.QuantityMeasurementApp;
 
 import com.quantity.measurement.enumsImpl.LengthUnit;
 import com.quantity.measurement.model.QuantityLength;
