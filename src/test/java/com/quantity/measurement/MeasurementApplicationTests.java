@@ -1,4 +1,4 @@
-package QuantityMeasurementApp;
+package com.quantity.measurement;
 
 import com.quantity.measurement.enums.WeightUnit;
 import com.quantity.measurement.model.Quantity;

@@ -7,7 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class QuantityMeasurementApp {
 
-
 	public static void main(String[] args) {
 
 		QuantityLength q1 = new QuantityLength(2.0, LengthUnit.CENTIMETERS);
