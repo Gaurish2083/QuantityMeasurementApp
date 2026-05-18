@@ -1,4 +1,4 @@
-package com.quantity.measurement;
+package QuantityMeasurementApp;
 
 import com.quantity.measurement.enums.IMeasurable;
 import com.quantity.measurement.enumsImpl.TemperatureUnit;
